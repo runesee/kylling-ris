@@ -1,0 +1,101 @@
+.editWeightPopup {
+  width: 35%;
+  max-height: 35%;
+  border-radius: 5px;
+  border: solid;
+  padding: 40px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vh 2vh 0 2vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.weightInput {
+  margin-top: 20px;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.weightInput > input {
+  width: 5em;
+  max-width: 50vw;
+  font-size: larger;
+  text-align: right;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border-bottom: 2px solid black;
+  margin: 0 1px 0 0;
+  padding-bottom: 1px;
+}
+
+.weightInput > div {
+  font-size: larger;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  padding: 10px 40px;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #2275c3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 1170px) {
+  .editWeightPopup {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .editWeightPopup {
+    width: 75%;
+  }
+
+  .content {
+    padding: 1vh 1vh 0 1vh;
+  }
+
+  .submitButton {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+}

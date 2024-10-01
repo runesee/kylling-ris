@@ -1,0 +1,114 @@
+.weekdayNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.date {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 3vh;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+.weekdayNavigation {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 225px;
+}
+
+.weekday {
+  font-weight: 400;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.weekday:hover {
+  transform: scale(0.975);
+}
+
+.navigationArrow {
+  cursor: pointer;
+}
+
+.navigationArrow:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.disabledNaviagtionArrow {
+  color: #b0b0b0;
+}
+
+.calendarContainer {
+  position: absolute;
+  top: 45px;
+}
+
+@media only screen and (max-width: 1170px) {
+  .dateInfo {
+    margin-top: 0;
+  }
+
+  .weekday {
+    margin-top: 3vh;
+  }
+
+  .navigationArrow {
+    margin-top: 3.5vh;
+  }
+
+  .navigationArrow:hover {
+    border-radius: 50%;
+  }
+
+  .disabledNaviagtionArrow {
+    margin-top: 3.5vh;
+  }
+
+  .calendarContainer {
+    margin-top: 3vh;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .weekday {
+    background-color: white;
+    color: black;
+    margin-top: 3vh;
+  }
+
+  .navigationArrow {
+    color: black;
+    margin-top: 3.5vh;
+  }
+
+  .navigationArrow:hover {
+    background-color: #c8e2fa;
+    border-radius: 50%;
+  }
+
+  .disabledNaviagtionArrow {
+    margin-top: 3.5vh;
+  }
+
+  .dateinfo {
+    background-color: white;
+  }
+}

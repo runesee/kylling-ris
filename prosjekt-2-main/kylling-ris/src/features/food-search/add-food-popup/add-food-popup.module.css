@@ -1,0 +1,228 @@
+.addFoodPopup {
+  width: 50vw;
+  height: auto;
+  min-height: 300px;
+  border-radius: 5px;
+  border: solid;
+  padding: 30px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addFoodPopup > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.weightInput {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weightInput > input {
+  width: 5em;
+  max-width: 50vw;
+  font-size: larger;
+  text-align: right;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border-bottom: 2px solid black;
+  margin: 0 1px 0 0;
+  padding-bottom: 1px;
+}
+
+/* unit */
+.weightInput > div {
+  font-size: larger;
+}
+
+.submitButton {
+  padding: 10px 40px;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #2275c3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.closeButton:focus {
+  outline: none;
+}
+
+.closeButton {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border: none;
+  background-color: transparent;
+}
+
+/* The X for the close button */
+.closeButton::before,
+.closeButton::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.closeButton::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.closeButton::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.title {
+  margin-top: 0;
+  font-size: 2em;
+  max-width: 90%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.addButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.addButton:hover {
+  transform: scale(0.9);
+}
+
+.enter {
+  transition:
+    opacity 300ms ease-out,
+    transform 200ms ease-out;
+}
+
+.enterFrom {
+  opacity: 0;
+}
+
+.enterTo {
+  opacity: 100;
+}
+
+.leave {
+  transition:
+    opacity 200ms ease-in,
+    transform 200ms ease-in;
+}
+
+.leaveFrom {
+  opacity: 100;
+}
+
+.leaveTo {
+  opacity: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.datePicker {
+  font-size: large;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.datePickerWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.datePickerLabel {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 80%;
+  font-weight: bold;
+}
+
+:global(.react-datepicker) {
+  margin-left: -12px;
+}
+
+:global(.react-datepicker__triangle)::before,
+:global(.react-datepicker__triangle)::after {
+  transform: translate(calc(12px)) !important;
+}
+
+@media only screen and (max-width: 1170px) {
+  .addFoodPopup {
+    width: 60vw;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 1em;
+  }
+
+  .addFoodPopup {
+    width: 90vw;
+    padding: 20px;
+  }
+}

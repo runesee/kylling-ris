@@ -1,0 +1,52 @@
+.pageLink {
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.pageTitleContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-right: auto;
+  margin-top: 3vh;
+  border-bottom: 2px solid #2275c3;
+  margin-bottom: 3px;
+}
+
+.titleAndSubtitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: rgb(44, 44, 44);
+  text-align: center;
+}
+
+.pageTitleBlue {
+  color: #2275c3;
+}
+
+.pageTitleRed {
+  color: #c2242b;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: auto;
+}
+
+@media only screen and (max-width: 1170px) {
+  .pageLink {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .pageTitleContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

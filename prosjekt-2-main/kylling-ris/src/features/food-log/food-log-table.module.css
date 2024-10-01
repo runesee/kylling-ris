@@ -1,0 +1,89 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.deleteButton {
+  background-color: rgb(63, 63, 63);
+  color: #b0b0b0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: red;
+  color: white;
+}
+
+.editButton {
+  background-color: rgb(63, 63, 63);
+  color: #b0b0b0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background-color: #2275c3;
+  color: white;
+}
+
+.header {
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  padding: 16px 0 16px 16px;
+}
+
+.deleteIcon {
+  margin-top: 3px;
+}
+
+.placeholder {
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+}
+
+.totals {
+  background-color: #ffffff;
+  padding: 16px 0 16px 16px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.totalCalories {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.totalProtein {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.expandedRow {
+  padding: 12px 0 12px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 365px) {
+  .expandedRow {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .deleteButton {
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,113 @@
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  align-items: center;
+  height: auto;
+  padding: 0 3% 3% 3%;
+}
+
+.titleAndLogoContainer {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggleButton {
+  right: -1px;
+  top: 0px;
+  padding: 10px;
+  height: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+  border-left: 1px solid black;
+}
+
+.inputField {
+  min-width: 200px;
+  width: 100%;
+  font-size: large;
+  margin: 0 auto 5px auto;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 5px;
+  opacity: 0.9;
+  position: relative;
+}
+
+.password {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 0;
+}
+
+.password .inputField {
+  width: calc(20vw - 24px);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.loginHeader {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.inputField:first-of-type {
+  margin-top: 5px;
+}
+
+.registerLink {
+  display: inline-block;
+  text-align: center;
+}
+
+.inputForm {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rememberContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+
+.rememberBox {
+  margin-right: 5px;
+}
+
+.submitButton {
+  background-color: #a0d1ff;
+  color: white;
+  width: 100%;
+}
+
+.submitButton:enabled {
+  background-color: #2275c3;
+  color: white;
+  opacity: 0.9;
+}
+
+.submitButton:disabled:hover {
+  cursor: default;
+}
+
+.submitButton:enabled:hover {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+}
+
+.guest {
+  margin-bottom: 10px;
+}

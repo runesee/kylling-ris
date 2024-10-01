@@ -1,0 +1,101 @@
+.searchResults {
+  display: flex;
+  flex-direction: column;
+}
+
+.foodItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  height: 50px;
+  padding: 0 10px 0 0;
+}
+
+.addFoodPopup {
+  padding: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 5px;
+}
+
+.foodInfo {
+  cursor: pointer;
+  width: 100%;
+  padding: 0 0.5vh;
+}
+
+.foodItem:hover {
+  background-color: #c8e2fa;
+}
+
+.foodItem:hover .addFoodPopup {
+  background-color: white;
+}
+
+.foodInfo > h1 {
+  font-size: 1em;
+  font-weight: medium;
+}
+
+.foodInfo > h2 {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.addImage {
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.loadingFoodItemsMessage {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Firefox */
+.invisibleScrollbar {
+  scrollbar-width: thin;
+  /* Removes button from track */
+  scrollbar-color: darkgray lightgray;
+}
+
+/* Chromium browsers only below */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray;
+  margin-top: 1px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a7878;
+}
+
+/* Hides scrollbar on mobile devices, while still keeping functionality  */
+@media only screen and (max-width: 1170px) {
+  /* Chromium */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .invisibleScrollbar {
+    /* Firefox */
+    scrollbar-width: none;
+    /* Safari, IE and Edge */
+    -ms-overflow-style: none;
+  }
+}

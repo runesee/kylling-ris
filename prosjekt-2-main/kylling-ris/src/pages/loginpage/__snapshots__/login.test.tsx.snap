@@ -1,0 +1,155 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Login page > Login page renders correctly 1`] = `
+<div>
+  <div
+    class="_loginWrapper_f0e974"
+  >
+    <div
+      class="_TitleAndLogoContainer_f0e974"
+    >
+      <div
+        class="_titleAndSubtitle_9c7844"
+      >
+        <div
+          class="_pageTitleContainer_9c7844"
+        >
+          <a
+            class="_pageLink_9c7844"
+            href="/project2"
+          >
+            <h1
+              class="_pageTitleBlue_9c7844"
+            >
+              Kylling
+              <span
+                class="_pageTitleRed_9c7844"
+              >
+                &
+              </span>
+              Ris
+            </h1>
+            <img
+              alt="Kylling&Ris logo"
+              class="_logo_9c7844"
+              src="/project2/src/assets/logo.svg"
+            />
+          </a>
+        </div>
+        <h3
+          class="_subtitle_9c7844"
+        >
+          Kaloriteller
+        </h3>
+      </div>
+    </div>
+    <h2
+      class="_loginHeader_f0e974"
+    >
+      Logg inn
+    </h2>
+    <small
+      class="p-error"
+    />
+    <form
+      class="_inputForm_f0e974"
+    >
+      <label
+        for="email"
+      >
+        E-postadresse
+      </label>
+      <input
+        aria-label="E-postadresse"
+        class="p-inputtext p-component _inputField_f0e974 _inputField_f0e974"
+        data-pc-name="inputtext"
+        data-pc-section="root"
+        data-testid="e-mail"
+        maxlength="255"
+        name="email"
+        value=""
+      />
+      <label
+        for="password"
+      >
+        Passord
+      </label>
+      <span
+        class="_password_f0e974"
+      >
+        <input
+          aria-label="Passord"
+          class="p-inputtext p-component _inputField_f0e974 _inputField_f0e974"
+          data-pc-name="inputtext"
+          data-pc-section="root"
+          data-testid="password"
+          name="password"
+          type="password"
+          value=""
+        />
+        <button
+          aria-label="Veksle synlighet"
+          class="_toggleButton_f0e974 p-button p-component p-button-icon-only p-button-link"
+          data-pc-name="button"
+          data-pc-section="root"
+          data-testid="toggle"
+          type="button"
+        >
+          <span
+            class="p-button-icon p-c pi pi-eye"
+            data-pc-section="icon"
+          />
+          <span
+            class="p-button-label p-c"
+            data-pc-section="label"
+          >
+             
+          </span>
+        </button>
+      </span>
+      <button
+        class="_inputField_f0e974 _submitButton_f0e974"
+        data-testid="submit"
+        disabled=""
+        name="submitButton"
+        type="submit"
+      >
+        Logg inn
+      </button>
+    </form>
+    <span
+      class="_registerLink_f0e974"
+    >
+      <p
+        class="_guest_f0e974"
+      >
+        Har du ikke en bruker?
+      </p>
+      <div
+        class="_guest_f0e974"
+      >
+        <a
+          class="_pageLink_f0e974"
+          data-testid="navigate-register"
+          href="/project2/register"
+        >
+          <p>
+            Opprett en ny bruker
+          </p>
+        </a>
+      </div>
+      <div>
+        <a
+          class="_pageLink_f0e974"
+          data-testid="navigate-mainpage"
+          href="/project2"
+        >
+          <p>
+            Fortsett som gjest
+          </p>
+        </a>
+      </div>
+    </span>
+  </div>
+</div>
+`;

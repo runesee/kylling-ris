@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders Mainpage component correctly 1`] = `
+<div>
+  <div
+    class="_errorWrapper_222326"
+    id="error-page"
+  >
+    <div
+      class="_titleAndSubtitle_9c7844"
+    >
+      <div
+        class="_pageTitleContainer_9c7844"
+      >
+        <a
+          class="_pageLink_9c7844"
+          href="/project2"
+        >
+          <h1
+            class="_pageTitleBlue_9c7844"
+          >
+            Kylling
+            <span
+              class="_pageTitleRed_9c7844"
+            >
+              &
+            </span>
+            Ris
+          </h1>
+          <img
+            alt="Kylling&Ris logo"
+            class="_logo_9c7844"
+            src="/project2/src/assets/logo.svg"
+          />
+        </a>
+      </div>
+      <h3
+        class="_subtitle_9c7844"
+      >
+        Kaloriteller
+      </h3>
+    </div>
+    <div
+      class="_message_222326"
+    >
+      <h1>
+        Her har det skjedd en feil!
+      </h1>
+      <p>
+        Beklager, denne siden finnes ikke.
+      </p>
+    </div>
+  </div>
+</div>
+`;

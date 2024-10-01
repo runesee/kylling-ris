@@ -1,0 +1,82 @@
+.foodSearch {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBar {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.searchBar > input {
+  width: 100%;
+  border: none;
+  font-size: 1.3em;
+  padding: 0 3px 3px 9px;
+}
+
+.searchBar > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.searchIcon {
+  height: 1.7em;
+  user-select: none;
+}
+
+.filterImage {
+  height: 1.9em;
+  margin-top: 3px;
+  height: 2em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.filterButton {
+  padding: 0;
+  border: none;
+  background: none;
+  margin: 0;
+}
+
+.filterWrapper {
+  display: flex;
+  align-content: center;
+  padding: 0;
+}
+
+.filterImage:hover {
+  transform: scale(0.9);
+}
+
+.enter {
+  transition:
+    opacity 200ms ease-out,
+    transform 200ms ease-out;
+}
+
+.enterFrom {
+  opacity: 0;
+}
+
+.enterTo {
+  opacity: 100;
+}
+
+.leave {
+  transition:
+    opacity 150ms ease-in,
+    transform 150ms ease-in;
+}
+
+.leaveFrom {
+  opacity: 100;
+}
+
+.leaveTo {
+  opacity: 0;
+}
